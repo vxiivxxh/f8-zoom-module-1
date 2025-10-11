@@ -80,9 +80,8 @@
 nav ul {
   display: flex;
   align-items: center;
-  gap: 25px;
   list-style: none;
-  
+  gap: 10px;
 }
 
 nav ul li {
@@ -108,24 +107,23 @@ nav ul li img {
   stroke-width: 1.5px;
 }
 
-nav ul li:hover > a  {
+nav ul li:hover > a {
   color: var(--Orange);
 }
 nav ul li:hover > img {
   color: var(--Orange);
   transform: rotate(180deg);
 }
-nav ul li ul.dropdown li{
+nav ul li ul.dropdown li {
   display: block;
 }
-ul li ul.dropdown{
+nav ul li ul.dropdown {
   width: 100%;
   background: var(--White);
   position: absolute;
-  display: none;
   z-index: 1000;
 }
-ul li:hover > ul.dropdown{
+nav ul li:hover > ul.dropdown {
   display: block;
 }
 
