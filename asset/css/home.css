@@ -217,7 +217,7 @@ nav ul p {
   background: var(--Green, #017848);
 }
 
-.row-right .primary-background .primary-background {
+.row-right .primary-background .second-background {
   width: 170px;
   height: 422px;
   background: var(--Yellow, #fed464);
