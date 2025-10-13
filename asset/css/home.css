@@ -108,14 +108,13 @@ nav ul li img {
   stroke-width: 1.5px;
 }
 
-nav ul li:hover > a{
+nav ul li:hover > a {
   color: var(--Orange);
 }
 nav ul li:hover > img {
   color: var(--Orange);
   transform: rotate(180deg);
 }
-
 
 .phone-number {
   text-align: center;
@@ -205,7 +204,7 @@ nav ul p {
   background: var(--Green, #017848);
 }
 
-.row-right .primary-background .primary-background {
+.row-right .primary-background .second-background {
   width: 170px;
   height: 422px;
   background: var(--Yellow, #fed464);
@@ -231,9 +230,7 @@ nav ul p {
   width: 164px;
   height: 128px;
   flex-shrink: 0;
-  background: var(--Orange, #fd6038);
   position: absolute;
   right: -94px;
   top: 111px;
 }
-
