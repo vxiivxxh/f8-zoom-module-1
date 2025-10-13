@@ -87,12 +87,14 @@ nav ul {
 
 nav ul li {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 6px;
+  padding-bottom: 15px;
 }
 
 nav ul li a {
+  display: block;
   text-decoration: none;
   color: var(--Dark);
   font-family: var(--second-font);
@@ -114,6 +116,30 @@ nav ul li:hover > a {
 nav ul li:hover > img {
   color: var(--Orange);
   transform: rotate(180deg);
+}
+nav ul li ul.submenu li {
+  display: inline-flex;
+}
+nav ul li ul.submenu {
+  width: 185px;
+  height: 252px;
+  position: absolute;
+  display: none;
+  top: 40px;
+  z-index: 999;
+}
+nav ul li ul.submenu li {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+ul li:hover > ul.submenu {
+  display: block;
+  background: var(--White);
+}
+nav ul li ul.submenu li:hover >img{
+  transform: rotate(-90deg);
 }
 
 .phone-number {
