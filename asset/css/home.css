@@ -24,6 +24,9 @@
   --primary-font: "Roboto Slab";
   --second-font: "Manrope";
 }
+body{
+  padding-top: 80px;
+}
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +36,11 @@
 }
 .header {
   background: var(--Yellow-Light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
 }
 
 .container {
@@ -138,7 +146,7 @@ ul li:hover > ul.submenu {
   display: block;
   background: var(--White);
 }
-nav ul li ul.submenu li:hover >img{
+nav ul li ul.submenu li:hover > img {
   transform: rotate(-90deg);
 }
 
@@ -260,3 +268,5 @@ nav ul p {
   right: -94px;
   top: 111px;
 }
+
+
