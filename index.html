@@ -1,156 +1,673 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./asset/css/home.css" />
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Justice Law Firm</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <div class="navigation-bar">
-          <div class="logo-header">
-            <img
-              class="logo"
-              src="./asset/images/icons/logo-header.svg"
-              alt="logo-header"
-            />
-            <p>Justice <span>Law Firm</span></p>
-          </div>
-          
-
-          <nav>
-            <ul>
-              <li>
-                <a href="index.html">Home</a>
-                <img
-                  src="./asset/images/icons/header-button.svg"
-                  alt="dropdown"
-                />
-              </li>
-              <li>
-                <a href="./page/about.html">About</a>
-                <img
-                  src="./asset/images/icons/header-button.svg"
-                  alt="dropdown"
-                />
-              </li>
-              <li>
-                <a href="./page/practice.html">Practice Areas</a>
-                <img
-                  src="./asset/images/icons/header-button.svg"
-                  alt="dropdown"
-                />
-                <ul class="submenu">
-                  <li><a href="#">Divorce</a></li>
-                  <li>
-                    <a href="#">Personal injury</a
-                    ><img
-                      src="./asset/images/icons/header-button.svg"
-                      alt="submenu"
-                    />
-                  </li>
-                  <li>
-                    <a href="#">Employment</a
-                    ><img
-                      src="./asset/images/icons/header-button.svg"
-                      alt="submenu"
-                    />
-                  </li>
-                  <li>
-                    <a href="#">Imigration</a
-                    ><img
-                      src="./asset/images/icons/header-button.svg"
-                      alt="submenu"
-                    />
-                  </li>
-                  <li>
-                    <a href="#">Family</a
-                    ><img
-                      src="./asset/images/icons/header-button.svg"
-                      alt="submenu"
-                    />
-                  </li>
-                  <li>
-                    <a href="#">Property</a
-                    ><img
-                      src="./asset/images/icons/header-button.svg"
-                      alt="submenu"
-                    />
-                  </li>
-                </ul>
-              </li>
-
-              <li><a href="./page/attorney.html">Attorney</a></li>
-              <li>
-                <a href="./page/page.html">Page</a>
-                <img
-                  src="./asset/images/icons/header-button.svg"
-                  alt="dropdown"
-                />
-                <ul class="submenu">
-                  <li><a href="./page/blog.html">Blog</a></li>
-                  <li>
-                    <a href="./page/contact.html">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">FAQ</a>
-                  </li>
-                  <li>
-                    <a href="#">404</a>
-                  </li>
-                  <li>
-                    <a href="#">Coming Soon</a>
-                  </li>
-                 
-                </ul>
-              </li>
-              <p>Call: <span class="phone-number">(000) 123 456 789</span></p>
-            </ul>
-          </nav>
-          <!-- End menu -->
-        </div>
-        <!-- End .navigation -bar -->
-      </div>
-      <div class="row">
-        <div class="row-left">
-          <p class="sub-heading">#1 Law Firm in New York</p>
-          <h1>Where People Meets Personalized Support.</h1>
-          <p class="p1">
-            Where every injury is personal. We are a different kind of law firm.
-            Let our small, passionate group of trial lawyers fight for your
-            rights!
-          </p>
-          <button class="btn-header">Get a Consultations</button>
-        </div>
-        <div class="row-right">
-          <div class="primary-background">
-            <div class="second-background"></div>
-            <div class="btn-playvideo">
-              <img
-                src="./asset/images/btn-play-video-heading.png"
-                alt="play-video"
+    <header class="primary-nav bg-yellow-light">
+      <div class="container nav-bar">
+        <a class="brand" href="./index.html">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.8669 19.5038C21.7214 20.3495 22.5224 20.3495 23.27 19.5038L30.4793 12.4476C31.1736 11.6547 31.1736 10.8619 30.4793 10.0691C29.6783 9.27621 28.8773 9.27621 28.0762 10.0691L20.8669 2.9335C21.7214 2.19352 21.7214 1.42711 20.8669 0.634271C20.1193 -0.211424 19.345 -0.211424 18.5439 0.634271L11.3346 7.53197C10.5336 8.32481 10.5336 9.11765 11.3346 9.91049C12.0823 10.6505 12.8833 10.6505 13.7377 9.91049L16.1408 12.289L11.3346 16.9668C10.5336 16.2796 9.73256 16.2796 8.93152 16.9668L0.600775 25.2916C-0.200258 26.0844 -0.200258 26.8772 0.600775 27.6701L2.76357 30.3657C3.618 31.2114 4.41904 31.2114 5.16667 30.3657L13.5775 22.0409C13.8979 21.7238 14.0581 21.3406 14.0581 20.8913C14.0581 20.442 13.8979 20.0588 13.5775 19.7417L18.3036 14.9847L20.7067 17.3632C20.0659 17.9974 20.1193 18.711 20.8669 19.5038ZM18.5439 10.0691L16.1408 7.69054L18.5439 5.31202L25.6731 12.4476L23.27 14.8261L20.8669 12.4476L18.5439 10.0691Z"
+                fill="#0E1412"
               />
-            </div>
-            <img
-              class="main-image"
-              src="./asset/images/image-heading.png"
-              alt="image-heading"
-            />
-            <img
-              class="overlay-decoration"
-              src="./asset/images/overlay-decoration-1.png"
-              alt="overlay-decoration"
-            />
+            </svg>
+          </span>
+          <span class="brand-text">
+            <span class="brand-name">Justice</span>
+            <span class="brand-tagline">Law Firm</span>
+          </span>
+        </a>
+        <nav class="nav-panel" aria-label="Primary">
+          <ul class="nav-list nav-list--icons">
+            <li class="nav-item nav-item--dropdown">
+              <a class="nav-link is-active" href="./index.html" aria-current="page" aria-haspopup="true" aria-expanded="false">
+                Home
+                <svg class="icon icon-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+              <ul class="nav-dropdown" aria-label="Home sections">
+                <li><a class="nav-dropdown__link" href="#overview">Overview</a></li>
+                <li><a class="nav-dropdown__link" href="#about-highlight">About Us</a></li>
+                <li><a class="nav-dropdown__link" href="#practice-areas">Practice Areas</a></li>
+                <li><a class="nav-dropdown__link" href="#features">Why Choose Us</a></li>
+                <li><a class="nav-dropdown__link" href="#team">Team</a></li>
+                <li><a class="nav-dropdown__link" href="#testimonials">Testimonials</a></li>
+                <li><a class="nav-dropdown__link" href="#faq">FAQ</a></li>
+                <li><a class="nav-dropdown__link" href="#blog">Blog</a></li>
+                <li><a class="nav-dropdown__link" href="#contact">Contact</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">
+                About
+                <svg class="icon icon-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./practice.html">
+                Practice Areas
+                <svg class="icon icon-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Attorneys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Page
+                <svg class="icon icon-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="nav-contact">
+            <span class="nav-contact__label">Call :</span>
+            <a class="nav-contact__number" href="tel:000123456789">(000) 123 456 789</a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
+
+    <main>
+      <section class="section hero bg-yellow-light" id="overview">
+        <div class="container">
+          <div class="row hero__row">
+            <div class="row-left hero__content">
+              <p class="sub-heading">#1 Law Firm in New York</p>
+              <h1>Where People Meets Personalized Support.</h1>
+              <p class="p1">
+                Where every injury is personal. We are a different kind of law firm. Let our small, passionate group of trial lawyers fight for your rights!
+              </p>
+              <button class="btn-header">Get a Consultations</button>
+            </div>
+            <div class="row-right hero__media">
+              <div class="primary-background hero__primary-background">
+                <div class="second-background hero__secondary-background"></div>
+                <button class="btn-playvideo hero__play" type="button" aria-label="Play video">
+                  <img src="./assets/images/hero/btn-play-video-heading.svg" alt="" aria-hidden="true" />
+                </button>
+                <img
+                  class="main-image"
+                  src="./assets/images/hero/image-heading.png"
+                  alt="Attorney offering personalized legal support"
+                />
+                <img
+                  class="overlay-decoration"
+                  src="./assets/images/hero/overlay-decoration-1.png"
+                  alt=""
+                  aria-hidden="true"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section about-highlight about-highlight--dark" id="about-highlight">
+        <div class="container about-highlight__grid">
+          <div class="about-highlight__media">
+            <span class="about-highlight__stripe" aria-hidden="true"></span>
+            <img
+              class="about-highlight__photo"
+              src="./assets/images/about/lawyer-offering-guidance-during-a-consultation.png"
+              alt="Lawyer offering guidance during a consultation"
+            />
+            <img
+              class="about-highlight__mask"
+              src="./assets/images/about/mask-group.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="about-highlight__content">
+            <p class="section-tag light">#About Us</p>
+            <h2 class="section-title light">Get the Guidance, Support, and Counsel</h2>
+            <p class="about-highlight__copy">
+              Every year hundreds of clients choose our firm because of our dedication to advocating for our clients before, during, and after closing.
+            </p>
+            <div class="about-highlight__stats">
+              <div class="about-highlight__stat">
+                <div class="about-highlight__stat-number">1782</div>
+                <span class="about-highlight__stat-label">Law Cases</span>
+              </div>
+              <div class="about-highlight__stat">
+                <div class="about-highlight__stat-number">10+</div>
+                <span class="about-highlight__stat-label">Lawyers</span>
+              </div>
+              <div class="about-highlight__stat">
+                <div class="about-highlight__stat-number">98%</div>
+                <span class="about-highlight__stat-label">Happy Clients</span>
+              </div>
+            </div>
+            <a class="button" href="./about.html">Learn More</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice section" id="practice-areas">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-tag muted">#Services</p>
+            <h2 class="section-title">Our Practice Areas</h2>
+            <p class="section-description">
+              Our law office provides a professional experience for all our clients, helping them navigate their legal rights.
+            </p>
+          </div>
+
+          <div class="practice-grid">
+            <article class="practice-card" id="practice-personal-injury">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/personal-injury-law.png" alt="Personal Injury Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Personal Injury Law</h3>
+              </div>
+            </article>
+
+            <article class="practice-card" id="practice-employment">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/employment-law.png" alt="Employment Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Employment Law</h3>
+              </div>
+            </article>
+
+            <article class="practice-card" id="practice-immigration">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/immigration-law.png" alt="Immigration Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Immigration Law</h3>
+              </div>
+            </article>
+
+            <article class="practice-card" id="practice-family">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/family-law.png" alt="Family Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Family Law</h3>
+              </div>
+            </article>
+
+            <article class="practice-card" id="practice-divorce">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/divorce-law.png" alt="Divorce Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Divorce Law</h3>
+              </div>
+            </article>
+
+            <article class="practice-card" id="practice-property">
+              <div class="practice-card__media">
+                <img src="./assets/images/practice/property-law.png" alt="Property Law" />
+              </div>
+              <div class="practice-card__title">
+                <h3>Property Law</h3>
+              </div>
+            </article>
+          </div>
+
+          <div class="practice-actions">
+            <a class="button" href="./practice.html">View All</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-block" id="features">
+        <div class="container feature-block__inner">
+          <div class="feature-block__media">
+            <span class="feature-block__accent" aria-hidden="true"></span>
+            <img
+              class="feature-block__photo"
+              src="./assets/images/features/our-legal-team-reviewing-documents-together.png"
+              alt="Our legal team reviewing documents together"
+            />
+            <img
+              class="feature-block__mask"
+              src="./assets/images/features/abstract-icon-2.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+          <div class="feature-block__content">
+            <p class="section-tag muted">#Features</p>
+            <h2 class="section-title">A Heritage of Legal Talent in the US</h2>
+            <p class="feature-block__copy">
+              When you are seeking the services of a nationally recognized law firm, you have every right to expect an extra measure of expertise.
+            </p>
+            <ul class="feature-list">
+              <li>Fast and Responsive</li>
+              <li>Top Notch Communication</li>
+              <li>Emotional Intelligence</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-block bg-gray-50">
+        <div class="container feature-block__inner">
+          <div class="feature-block__content">
+            <p class="section-tag muted">#Features</p>
+            <h2 class="section-title">Exceptional Scope and Diverse Practices</h2>
+            <p class="feature-block__copy">
+              Our attorneys provide clients with extensive knowledge and experience in each specialized area of practice we offer. We are providing the best.
+            </p>
+            <a class="button" href="pages/practice.html#practice-overview">Our Services</a>
+          </div>
+          <div class="feature-block__media feature-block__media--secondary">
+            <span class="feature-block__accent" aria-hidden="true"></span>
+            <img
+              class="feature-block__photo"
+              src="./assets/images/features/client-receiving-legal-consultation.png"
+              alt="Client receiving legal consultation"
+            />
+            <img
+              class="feature-block__mask feature-block__mask--secondary"
+              src="./assets/images/features/abstract-icon-3.svg"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section team team--dark" id="team">
+        <div class="container">
+          <div class="team__header">
+            <p class="section-tag light">#Team</p>
+            <h2 class="section-title light">Meet With Lawyers</h2>
+            <p class="team__intro">
+              Our team of experienced professionals has secured more than $150 Million in settlements and judgements for our clients.
+            </p>
+          </div>
+
+          <div class="team__grid">
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-david-warner.png" alt="Attorney David Warner" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>David Warner</h3>
+                <p>Attorney at Law</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-aaron-finch.png" alt="Attorney Aaron Finch" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>Aaron Finch</h3>
+                <p>Founding President</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-jamie-watts.png" alt="Attorney Jamie Watts" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>Jamie Watts</h3>
+                <p>Partner</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-ellyse-perry.png" alt="Attorney Ellyse Perry" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>Ellyse Perry</h3>
+                <p>Associate Attorney</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-meg-lanning.png" alt="Attorney Meg Lanning" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>Meg Lanning</h3>
+                <p>Senior Partner</p>
+              </div>
+            </article>
+            <article class="team-card">
+              <div class="team-card__media">
+                <img src="./assets/images/team/attorney-peter-siddle.png" alt="Attorney Peter Siddle" />
+                <a class="button team-card__cta" href="pages/about.html#team">View Profile</a>
+              </div>
+              <div class="team-card__body">
+                <h3>Peter Siddle</h3>
+                <p>Of Counsel</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="team__actions">
+            <a class="button" href="#team">All Attorney</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials bg-yellow-light" id="testimonials">
+        <div class="container">
+          <div class="testimonials__header">
+            <div>
+              <p class="section-tag muted">#Testimonial</p>
+              <h2 class="section-title">What Our Clients Say About Us</h2>
+            </div>
+            <div class="testimonials__controls" aria-hidden="true">
+              <span class="testimonials__control testimonials__control--dark">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                  <path d="M15 6H1M1 6L6 1M1 6L6 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+              <span class="testimonials__control testimonials__control--accent">
+                <svg width="16" height="12" viewBox="0 0 16 12" fill="none">
+                  <path d="M1 6H15M15 6L10 1M15 6L10 11" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="testimonials__grid">
+            <article class="testimonial-card">
+              <img src="./assets/images/testimonials/tim-southee.png" alt="Tim Southee" />
+              <svg class="testimonial-card__quote" viewBox="0 0 27 24" fill="none" aria-hidden="true">
+                <path d="M10.3195 2.70354C9.09015 4.2903 7.11804 6.83574 6.68716 9.89869C6.51948 11.0907 6.35177 13.1968 8.73677 13.6736C10.918 14.1097 13.395 18.0446 10.4137 22.2169C8.94373 24.2742 3.26427 25.7932 0.724676 19.4354C-0.703839 15.8591 -0.989539 7.03768 9.29575 0.361995C10.3975 -0.353189 12.1113 -0.0352947 11.159 1.55408C10.9849 1.84477 10.685 2.23178 10.3195 2.70354Z" />
+                <path d="M25.5308 2.70353C24.3014 4.29029 22.3293 6.83574 21.8984 9.89869C21.7307 11.0907 21.563 13.1968 23.948 13.6736C26.1292 14.1097 28.6062 18.0446 25.625 22.2169C24.155 24.2742 18.4755 25.7932 15.9359 19.4354C14.5074 15.8591 14.2217 7.03768 24.507 0.361995C25.6088 -0.353189 27.3226 -0.0352947 26.3703 1.55408C26.1961 1.84476 25.8963 2.23178 25.5308 2.70353Z" />
+              </svg>
+              <p class="testimonial-card__copy">
+                “I am very satisfied with this law office. Very professional, quick responses to calls, humble and understanding. I recommend anyone who needs a lawyer to Marty Meason and his team.”
+              </p>
+              <div class="testimonial-card__footer">
+                <h3>Tim Southee</h3>
+                <p>UI/UX Designer</p>
+              </div>
+            </article>
+            <article class="testimonial-card testimonial-card--featured">
+              <img src="./assets/images/testimonials/trent-boult.png" alt="Trent Boult" />
+              <svg class="testimonial-card__quote" viewBox="0 0 27 24" fill="none" aria-hidden="true">
+                <path d="M10.3195 2.70354C9.09015 4.2903 7.11804 6.83574 6.68716 9.89869C6.51948 11.0907 6.35177 13.1968 8.73677 13.6736C10.918 14.1097 13.395 18.0446 10.4137 22.2169C8.94373 24.2742 3.26427 25.7932 0.724676 19.4354C-0.703839 15.8591 -0.989539 7.03768 9.29575 0.361995C10.3975 -0.353189 12.1113 -0.0352947 11.159 1.55408C10.9849 1.84477 10.685 2.23178 10.3195 2.70354Z" />
+                <path d="M25.5308 2.70353C24.3014 4.29029 22.3293 6.83574 21.8984 9.89869C21.7307 11.0907 21.563 13.1968 23.948 13.6736C26.1292 14.1097 28.6062 18.0446 25.625 22.2169C24.155 24.2742 18.4755 25.7932 15.9359 19.4354C14.5074 15.8591 14.2217 7.03768 24.507 0.361995C25.6088 -0.353189 27.3226 -0.0352947 26.3703 1.55408C26.1961 1.84476 25.8963 2.23178 25.5308 2.70353Z" />
+              </svg>
+              <p class="testimonial-card__copy">
+                “Their professionalism humbled me, and they handled my case with compassion. The constant communication gave me peace of mind throughout the legal process.”
+              </p>
+              <div class="testimonial-card__footer">
+                <h3>Trent Boult</h3>
+                <p>UI/UX Designer</p>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <img src="./assets/images/testimonials/matt-henry.png" alt="Matt Henry" />
+              <svg class="testimonial-card__quote" viewBox="0 0 27 24" fill="none" aria-hidden="true">
+                <path d="M10.3195 2.70354C9.09015 4.2903 7.11804 6.83574 6.68716 9.89869C6.51948 11.0907 6.35177 13.1968 8.73677 13.6736C10.918 14.1097 13.395 18.0446 10.4137 22.2169C8.94373 24.2742 3.26427 25.7932 0.724676 19.4354C-0.703839 15.8591 -0.989539 7.03768 9.29575 0.361995C10.3975 -0.353189 12.1113 -0.0352947 11.159 1.55408C10.9849 1.84477 10.685 2.23178 10.3195 2.70354Z" />
+                <path d="M25.5308 2.70353C24.3014 4.29029 22.3293 6.83574 21.8984 9.89869C21.7307 11.0907 21.563 13.1968 23.948 13.6736C26.1292 14.1097 28.6062 18.0446 25.625 22.2169C24.155 24.2742 18.4755 25.7932 15.9359 19.4354C14.5074 15.8591 14.2217 7.03768 24.507 0.361995C25.6088 -0.353189 27.3226 -0.0352947 26.3703 1.55408C26.1961 1.84476 25.8963 2.23178 25.5308 2.70353Z" />
+              </svg>
+              <p class="testimonial-card__copy">
+                “They made a complicated situation feel manageable. I always knew what was coming next and felt genuinely supported.”
+              </p>
+              <div class="testimonial-card__footer">
+                <h3>Matt Henry</h3>
+                <p>UI/UX Designer</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="testimonials__dots" aria-hidden="true">
+            <span class="is-active"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq bg-gray-50" id="faq">
+        <div class="container faq__inner">
+          <div class="faq__intro">
+            <p class="section-tag muted">#FAQ</p>
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq__tabs" aria-hidden="true">
+              <span class="is-active">General Question</span>
+              <span>Other Question</span>
+            </div>
+          </div>
+
+          <div class="faq__list">
+            <details class="faq-item">
+              <summary>
+                <span>Why should I hire an attorney?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg class="faq-item__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq-item__answer">
+                <p>
+                  When you are faced with a personal injury, hiring an attorney not only provides trusted legal guidance, but someone to stand in your corner
+                  when you need it most. Insurance companies seek their best interests, so it’s always smart to have counsel dedicated to yours.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>I am still hurting. What do I do next?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg class="faq-item__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq-item__answer">
+                <p>
+                  Seek medical attention right away and keep detailed records of every visit, diagnosis, and recommendation. Share these records with your
+                  attorney so we can combine medical documentation with legal strategy to protect your health and financial recovery.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>
+                <span>How will I pay for my medical bills?</span>
+                <span class="faq-item__icon" aria-hidden="true">
+                  <svg class="faq-item__chevron" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                    <path d="M1 1L6 6L11 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <div class="faq-item__answer">
+                <p>
+                  We explore every available option—insurance coverage, letters of protection, and negotiated payment plans—to keep treatment accessible while
+                  your case proceeds. Our goal is to relieve financial pressure so you can focus on healing.
+                </p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blog" id="blog">
+        <div class="container blog__inner">
+          <div class="blog__header">
+            <div>
+              <p class="section-tag muted">#Blog</p>
+              <h2 class="section-title">Latest Story &amp; News</h2>
+              <p class="blog__intro">
+                We’re always adding new content to help better inform our clients on issues impacting their lives.
+              </p>
+            </div>
+            <a class="button" href="#">Browse All</a>
+          </div>
+
+          <div class="blog__grid">
+            <article class="blog-card">
+              <div class="blog-card__media">
+                <img src="./assets/images/blog/business-people-reviewing-legal-documents.png" alt="Business people reviewing legal documents" />
+              </div>
+              <div class="blog-card__meta">
+                <img src="./assets/images/blog/author-mitchell-starc.png" alt="Author Mitchell Starc" />
+                <div>
+                  <h3>Mitchell Starc</h3>
+                  <p>Attorney at Law</p>
+                </div>
+              </div>
+              <h4 class="blog-card__title">5 Key Rules of Law Our Society Must Know in 2022</h4>
+              <a class="blog-card__link blog-card__link--accent" href="#">Learn More</a>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__media">
+                <img src="./assets/images/blog/stack-of-law-books-and-gavel.png" alt="Stack of law books and gavel" />
+              </div>
+              <div class="blog-card__meta">
+                <img src="./assets/images/blog/author-mitchell-starc.png" alt="Author Mitchell Starc" />
+                <div>
+                  <h3>Mitchell Starc</h3>
+                  <p>Attorney at Law</p>
+                </div>
+              </div>
+              <h4 class="blog-card__title">How to Prepare for a Consultation with Your Lawyer</h4>
+              <a class="blog-card__link" href="#">Learn More</a>
+            </article>
+
+            <article class="blog-card">
+              <div class="blog-card__media">
+                <img src="./assets/images/blog/attorneys-walking-outside-the-courthouse.png" alt="Attorneys walking outside the courthouse" />
+              </div>
+              <div class="blog-card__meta">
+                <img src="./assets/images/blog/author-mitchell-starc.png" alt="Author Mitchell Starc" />
+                <div>
+                  <h3>Mitchell Starc</h3>
+                  <p>Attorney at Law</p>
+                </div>
+              </div>
+              <h4 class="blog-card__title">Understanding Your Rights After a Workplace Injury</h4>
+              <a class="blog-card__link" href="#">Learn More</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta bg-green" id="contact">
+        <div class="container cta-content">
+          <p class="section-tag light">#CTA</p>
+          <h2 class="section-title light">Dealing With an Issue?</h2>
+          <p class="section-description light">
+            Where every injury is personal. We are a different kind of law firm. Let our small, passionate group of trial lawyers fight for your rights!
+          </p>
+          <a class="button" href="tel:000123456789">Get a Consultation</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-top">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3 class="footer-heading">Justice</h3>
+            <ul class="footer-links">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms &amp; Conditions</a></li>
+              <li><a href="#">Cookie Preferences</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Pages</h3>
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./practice.html">Practice Areas</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-heading">Justice</h3>
+            <address class="footer-address">
+              <p>50 Harrison Street, PH Suite 445</p>
+              <p>Hoboken, NJ 07030</p>
+              <p>(000) 123-4567</p>
+              <p>yourlawfirm22@gmail.com</p>
+            </address>
+          </div>
+
+          <div class="footer-column">
+            <div class="footer-map">
+            <img src="./assets/images/footer/map-preview-of-justice-law-firm-location.png" alt="Map preview of Justice Law Firm location" />
+              <a class="map-button" href="#">View Large Map</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom__inner">
+          <a class="brand brand--inverse" href="./index.html">
+            <span class="brand-icon" aria-hidden="true">
+              <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20.8669 19.5038C21.7214 20.3495 22.5224 20.3495 23.27 19.5038L30.4793 12.4476C31.1736 11.6547 31.1736 10.8619 30.4793 10.0691C29.6783 9.27621 28.8773 9.27621 28.0762 10.0691L20.8669 2.9335C21.7214 2.19352 21.7214 1.42711 20.8669 0.634271C20.1193 -0.211424 19.345 -0.211424 18.5439 0.634271L11.3346 7.53197C10.5336 8.32481 10.5336 9.11765 11.3346 9.91049C12.0823 10.6505 12.8833 10.6505 13.7377 9.91049L16.1408 12.289L11.3346 16.9668C10.5336 16.2796 9.73256 16.2796 8.93152 16.9668L0.600775 25.2916C-0.200258 26.0844 -0.200258 26.8772 0.600775 27.6701L2.76357 30.3657C3.618 31.2114 4.41904 31.2114 5.16667 30.3657L13.5775 22.0409C13.8979 21.7238 14.0581 21.3406 14.0581 20.8913C14.0581 20.442 13.8979 20.0588 13.5775 19.7417L18.3036 14.9847L20.7067 17.3632C20.0659 17.9974 20.1193 18.711 20.8669 19.5038ZM18.5439 10.0691L16.1408 7.69054L18.5439 5.31202L25.6731 12.4476L23.27 14.8261L20.8669 12.4476L18.5439 10.0691Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <span class="brand-text">
+              <span class="brand-name">Justice</span>
+              <span class="brand-tagline">Law Firm</span>
+            </span>
+          </a>
+
+          <p class="footer-note">Copyright © 2022 UI HUT All Rights Reserved</p>
+
+          <div class="footer-social">
+            <a class="social-button social-button--primary" href="#" aria-label="Visit our Facebook page">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.60684 5.62469L5.91808 3.815H3.97258V2.64062C3.97258 2.14562 4.24425 1.66281 5.11565 1.66281H6V0.122188C6 0.122188 5.19742 0 4.43098 0C2.8293 0 1.78102 0.877187 1.78102 2.46469V3.815H0V5.62469H1.78102V10H3.97258V5.62469H5.60684Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="social-button" href="#" aria-label="Visit our LinkedIn profile">
+              <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 1.18378C11.5506 1.3879 11.074 1.52189 10.586 1.58129C11.0943 1.26885 11.4847 0.774108 11.6685 0.184623C11.1852 0.478685 10.6565 0.685871 10.1051 0.797228C9.65602 0.306615 9.01622 0 8.30808 0C6.94842 0 5.84606 1.13033 5.84606 2.52444C5.84606 2.72233 5.86786 2.91498 5.90981 3.0998C3.86372 2.99448 2.04966 1.98946 0.835359 0.462109C0.623484 0.83496 0.502078 1.26866 0.502078 1.73125C0.502078 2.60712 0.93675 3.37978 1.59731 3.83252C1.20635 3.81996 0.823992 3.71168 0.482156 3.51672C0.482016 3.5273 0.482016 3.53787 0.482016 3.54849C0.482016 4.77164 1.33064 5.79199 2.45686 6.02391C2.09432 6.12501 1.71404 6.13981 1.34508 6.06717C1.65834 7.07012 2.56758 7.79996 3.64486 7.82039C2.80228 8.49745 1.7407 8.90106 0.587297 8.90106C0.388547 8.90106 0.192609 8.88909 0 8.86578C1.08952 9.58206 2.38359 10 3.77391 10C8.30236 10 10.7786 6.15321 10.7786 2.81721C10.7786 2.70772 10.7763 2.59885 10.7715 2.4906C11.2535 2.13332 11.6695 1.69079 12 1.18378Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+            <a class="social-button" href="#" aria-label="Visit our Instagram profile">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.00013 3.66659C4.35346 3.66659 3.8335 4.18655 3.8335 4.83322C3.8335 5.47989 4.35346 5.99984 5.00013 5.99984C5.6468 5.99984 6.16675 5.47989 6.16675 4.83322C6.16675 4.18655 5.6468 3.66659 5.00013 3.66659ZM5.00013 5.33317C4.72346 5.33317 4.50016 5.10988 4.50016 4.83322C4.50016 4.55655 4.72346 4.33326 5.00013 4.33326C5.2768 4.33326 5.50009 4.55655 5.50009 4.83322C5.50009 5.10988 5.2768 5.33317 5.00013 5.33317ZM6.7468 3.59992C6.7468 3.73659 6.6368 3.84659 6.50013 3.84659C6.36346 3.84659 6.25346 3.73659 6.25346 3.59992C6.25346 3.46325 6.36346 3.35325 6.50013 3.35325C6.6368 3.35325 6.7468 3.46325 6.7468 3.59992ZM7.32679 3.84659C7.32679 4.26659 7.32679 4.68326 7.31012 5.10326C7.29346 5.57326 7.18679 6.00326 6.81346 6.37659C6.44013 6.74993 6.01346 6.85659 5.54346 6.87326C5.12346 6.88993 4.70679 6.88993 4.28679 6.88993C3.86679 6.88993 3.45013 6.88993 3.03013 6.87326C2.56013 6.85659 2.13013 6.74993 1.7568 6.37659C1.38346 6.00326 1.2768 5.57326 1.26013 5.10326C1.24346 4.68326 1.24346 4.26659 1.24346 3.84659C1.24346 3.42659 1.24346 3.00993 1.26013 2.58993C1.2768 2.11993 1.38346 1.68993 1.7568 1.31659C2.13013 0.943259 2.56013 0.836592 3.03013 0.819925C3.45013 0.803259 3.86679 0.803259 4.28679 0.803259C4.70679 0.803259 5.12346 0.803259 5.54346 0.819925C6.01346 0.836592 6.44346 0.943259 6.81679 1.31659C7.19013 1.68993 7.29679 2.11659 7.31346 2.58659C7.33013 3.00659 7.33013 3.42325 7.32679 3.84325V3.84659ZM6.65346 5.08326C6.71013 4.68659 6.71013 4.26326 6.68679 3.85326C6.67013 3.53659 6.60346 3.29993 6.43346 3.12993C6.26346 2.95993 6.0268 2.89326 5.71013 2.87659C5.30013 2.85326 4.87679 2.85326 4.48013 2.89659C4.16346 2.91326 3.9268 2.97993 3.7568 3.14993C3.5868 3.31993 3.52013 3.55659 3.50346 3.87326C3.48013 4.28326 3.48013 4.70659 3.52346 5.10326C3.54013 5.41993 3.60679 5.65659 3.77679 5.82659C3.94679 5.99659 4.18346 6.06326 4.50013 6.07993C4.91013 6.10326 5.33346 6.10326 5.73013 6.05993C6.04679 6.04326 6.28346 5.97659 6.45346 5.80659C6.62346 5.63659 6.69013 5.39993 6.70679 5.08326H6.65346Z"
+                  fill="white"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
