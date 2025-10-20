@@ -1,3 +1,375 @@
 /* Practice page specific styles */
 /* Currently using shared .practice-grid and .practice-card styles from index.css */
 /* Add any practice-page-specific styles here if needed */
+
+/* Practice Hero Section */
+.practice-hero {
+    padding: 6.25rem 0;
+    background-color: #F8EBC9;
+    text-align: center;
+}
+
+.practice-hero__content {
+    max-width: 670px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.practice-hero__tag {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #0E1412;
+    margin: 0;
+}
+
+.practice-hero__title {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3.75rem;
+    line-height: 4.375rem;
+    text-align: center;
+    color: #0E1412;
+    margin: 0;
+    max-width: 670px;
+}
+
+.practice-hero__description {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #0E1412;
+    margin: 0;
+    max-width: 670px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .practice-hero {
+        padding: 4rem 0;
+    }
+
+    .practice-hero__title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .practice-hero__tag,
+    .practice-hero__description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* CTA Section */
+.cta {
+    background: #017848;
+    padding: 6.25rem 0;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 470px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.cta .section-tag {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.cta .section-title {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 3.25rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+    max-width: 570px;
+}
+
+.cta .section-description {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.cta .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 35px;
+    background: #FD6038;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta .button:hover {
+    background: #E55532;
+}
+
+/* CTA Responsive */
+@media (max-width: 768px) {
+    .cta {
+        padding: 4rem 0;
+    }
+
+    .cta .section-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .cta .section-tag,
+    .cta .section-description {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .cta .button {
+        font-size: 1rem;
+        padding: 12px 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta {
+        padding: 3rem 0;
+    }
+
+    .cta .section-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .cta .section-tag,
+    .cta .section-description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* Practice Areas Section */
+.practice.section {
+    padding: 6.25rem 0;
+    background-color: var(--white);
+}
+
+.practice .section-header {
+    text-align: center;
+    margin-bottom: 4.5rem;
+    max-width: 470px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.practice .section-tag {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #586863;
+    margin: 0 0 0.5rem;
+}
+
+.practice .section-title {
+    font-family: 'Roboto Slab', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.625rem;
+    line-height: 3.25rem;
+    text-align: center;
+    color: #0E1412;
+    margin: 0 0 1.25rem;
+}
+
+.practice .section-description {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    text-align: center;
+    color: #586863;
+    margin: 0;
+}
+
+/* Practice Grid */
+.practice-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Practice Card */
+.practice-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.practice-card:hover {
+    transform: translateY(-8px);
+}
+
+.practice-card__media {
+    width: 100%;
+    height: 370px;
+    overflow: hidden;
+}
+
+.practice-card__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.practice-card__title {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 280px;
+    height: 60px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.practice-card:hover .practice-card__title {
+    background-color: #FD6038;
+}
+
+.practice-card:hover .practice-card__title h3 {
+    color: #FFFFFF;
+}
+
+.practice-card__title h3 {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.375rem;
+    line-height: 2rem;
+    text-align: center;
+    color: #0E1412;
+    margin: 0;
+    transition: color 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 768px) {
+    .practice.section {
+        padding: 4rem 0;
+    }
+
+    .practice .section-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .practice .section-header {
+        margin-bottom: 3rem;
+    }
+
+    .practice-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .practice-card__media {
+        height: 300px;
+    }
+
+    .practice-card__title {
+        width: 90%;
+        height: 60px;
+    }
+
+    .practice-card__title h3 {
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .practice .section-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+    }
+
+    .practice .section-tag,
+    .practice .section-description {
+        font-size: 1rem;
+        line-height: 1.625rem;
+    }
+
+    .practice-card__media {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .practice-hero {
+        padding: 3rem 0;
+    }
+
+    .practice-hero__title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .practice-hero__tag,
+    .practice-hero__description {
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+    }
+}

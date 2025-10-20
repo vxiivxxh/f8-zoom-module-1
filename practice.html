@@ -67,10 +67,23 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Attorneys</a>
+              <a class="nav-link" href="./blog.html">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
+            <li class="nav-item nav-item--dropdown">
+              <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
+                Pages
+                <svg class="icon icon-chevron" aria-hidden="true" width="12" height="12" viewBox="0 0 12 12">
+                  <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </a>
+              <ul class="nav-dropdown" aria-label="All Pages">
+                <li><a class="nav-dropdown__link" href="./index.html">Home</a></li>
+                <li><a class="nav-dropdown__link" href="./about.html">About</a></li>
+                <li><a class="nav-dropdown__link" href="./practice.html">Practice Areas</a></li>
+                <li><a class="nav-dropdown__link" href="./blog.html">Blog</a></li>
+                <li><a class="nav-dropdown__link" href="./contact.html">Contact</a></li>
+              </ul>
             </li>
           </ul>
           <div class="nav-contact">
@@ -82,14 +95,15 @@
     </header>
 
     <main>
-      <section class="section page-hero bg-cream" id="practice-overview">
-        <div class="container page-hero__content">
-          <p class="section-tag muted">#Practice Areas</p>
-          <h1 class="section-title">Comprehensive Legal Support Across Every Need</h1>
-          <p class="section-description">
-            Explore the matters our attorneys handle most often, from injury claims to complex business disputes. Each practice area is backed by decades of
-            courtroom experience and a commitment to personal service.
-          </p>
+      <!-- Hero Section -->
+      <section class="practice-hero">
+        <div class="container">
+          <div class="practice-hero__content">
+            <p class="practice-hero__tag">#Practice Areas</p>
+            <h1 class="practice-hero__title">Our Practice Areas to Serve You</h1>
+            <p class="practice-hero__description">Where every injury is personal. We are a different kind of law firm. Let our
+              small, passionate group of trial lawyers fight for your rights!</p>
+          </div>
         </div>
       </section>
 
@@ -161,34 +175,16 @@
         </div>
       </section>
 
-      <section class="section practice-overview bg-gray-50">
-        <div class="container feature-block__inner">
-          <div class="feature-block__content">
-            <p class="section-tag muted">#Our Approach</p>
-            <h2 class="section-title">Tailored Strategies for Every Client</h2>
-            <p class="feature-block__copy">
-              No two cases are the same. We pair thorough investigation with open communication so you understand the options at every turn. From first
-              consultation to final resolution, our team keeps you informed and empowered.
-            </p>
-            <p class="feature-block__copy">
-              Ready to talk through your matter? Choose the area that matches your needs above, or reach out and we’ll help you determine the best path forward.
-            </p>
-            <a class="button" href="#contact">Schedule a Consultation</a>
-          </div>
-          <div class="feature-block__media feature-block__media--accent-green">
-            <img src="./assets/images/features/our-legal-team-reviewing-documents-together.png" alt="Our team collaborating on a client matter" />
-          </div>
-        </div>
-      </section>
 
       <section class="section cta bg-green" id="contact">
         <div class="container cta-content">
           <p class="section-tag light">#CTA</p>
-          <h2 class="section-title light">Need Support Right Away?</h2>
+          <h2 class="section-title light">Dealing With a Issue?</h2>
           <p class="section-description light">
-            Tell us what brought you here and we’ll offer clear next steps. We respond to every message within one business day.
+            Where every injury is personal. We are a different kind of law firm. Let our small, passionate group of trial lawyers
+            fight for your rights!
           </p>
-          <a class="button" href="tel:000123456789">Call Our Office</a>
+          <a class="button" href="#contact">Get a Consultations</a>
         </div>
       </section>
     </main>
