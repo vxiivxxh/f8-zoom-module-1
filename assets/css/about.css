@@ -54,6 +54,14 @@
   display: flex;
   flex-direction: column;
   gap: 0.65rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.video-card:hover .video-card__info {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .video-card__info h3 {
