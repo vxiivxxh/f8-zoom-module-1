@@ -722,9 +722,12 @@
           <div class="faq__intro">
             <p class="section-tag muted">#FAQ</p>
             <h2 class="section-title">Frequently Asked Questions</h2>
-            <div class="faq__tabs" aria-hidden="true">
-              <span class="is-active">General Question</span>
-              <span>Other Question</span>
+            <div class="faq__tabs" role="tablist" aria-label="FAQ Categories">
+              <input type="radio" name="faq-tab" id="tab-general" class="faq__tab-input" checked />
+              <label for="tab-general" class="faq__tab" role="tab">General Question</label>
+            
+              <input type="radio" name="faq-tab" id="tab-other" class="faq__tab-input" />
+              <label for="tab-other" class="faq__tab" role="tab">Other Question</label>
             </div>
           </div>
 

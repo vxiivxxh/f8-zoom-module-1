@@ -762,11 +762,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+    background-color: var(--dark);
 }
 
 .testimonials__control:hover {
   transform: scale(1.05);
+  background-color: var(--orange);
 }
 
 .testimonials__control--dark {
@@ -774,6 +776,10 @@
 }
 
 .testimonials__control--accent {
+  background-color: var(--dark);
+  }
+  
+  .testimonials__control--accent:hover {
   background-color: var(--orange);
 }
 
@@ -919,17 +925,77 @@
   line-height: 1.875rem;
 }
 
-.faq__tabs span {
+/* Hide radio inputs */
+.faq__tab-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.faq__tabs span,
+.faq__tabs button,
+.faq__tab {
   color: var(--dark);
   font-weight: 400;
   cursor: pointer;
+  transition: color 0.3s ease, font-weight 0.3s ease;
+    position: relative;
+    padding-bottom: 0.25rem;
+    background: none;
+    border: none;
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+  
+  .faq__tabs span::after,
+  .faq__tabs button::after,
+  .faq__tab::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--orange);
+    transition: width 0.3s ease;
+  }
+  
+  .faq__tabs span:hover,
+  .faq__tabs button:hover,
+  .faq__tab:hover {
+    color: var(--orange);
+  }
+  
+  .faq__tabs span:hover::after,
+  .faq__tabs button:hover::after,
+  .faq__tab:hover::after {
+    width: 100%;
+  }
+  
+  /* Active state when radio is checked */
+  .faq__tab-input:checked+.faq__tab {
+    color: var(--orange);
+    font-weight: 600;
 }
 
-.faq__tabs span.is-active {
+.faq__tab-input:checked+.faq__tab::after {
+  width: 100%;
+}
+
+/* Legacy support for .is-active class */
+.faq__tabs span.is-active,
+.faq__tabs button.is-active,
+.faq__tab.is-active {
   color: var(--orange);
   font-weight: 600;
 }
 
+.faq__tabs span.is-active::after,
+.faq__tabs button.is-active::after,
+.faq__tab.is-active::after {
+  width: 100%;
+}
 .faq__list {
   display: grid;
   gap: 0;
