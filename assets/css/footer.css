@@ -62,6 +62,19 @@
   margin: 0;
 }
 
+.footer-address a {
+  color: #BECCC7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-address a:hover {
+  color: var(--orange);
+}
+
+.footer-address a:active {
+  color: var(--yellow-light);
+}
 .footer-map {
   position: relative;
   border-radius: 0.375rem;

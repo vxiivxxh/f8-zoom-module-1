@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="./assets/css/contact.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
+
   <body>
     <header class="primary-nav bg-yellow-light">
       <div class="container nav-bar">
@@ -77,8 +79,8 @@
             <li class="nav-item nav-item--dropdown">
               <a class="nav-link" href="#" aria-haspopup="true" aria-expanded="false">
                 Pages
-                <img src="./assets/images/icons/chevron-nav.svg" class="icon icon-chevron" aria-hidden="true" width="12" height="12"
-                  alt="" />
+                <img src="./assets/images/icons/chevron-nav.svg" class="icon icon-chevron" aria-hidden="true" width="12"
+                  height="12" alt="" />
               </a>
               <ul class="nav-dropdown" aria-label="All Pages">
                 <li><a class="nav-dropdown__link" href="./index.html">Home</a></li>
@@ -112,59 +114,26 @@
             <form class="contact-form" action="#" method="POST">
               <div class="form-row">
                 <div class="form-group">
-                  <input 
-                    type="text" 
-                    id="name" 
-                    name="name" 
-                    class="form-input" 
-                    placeholder="Enter your name"
-                    required
-                  />
+                  <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name" required />
                 </div>
                 <div class="form-group">
-                  <input 
-                    type="text" 
-                    id="company" 
-                    name="company" 
-                    class="form-input" 
-                    placeholder="Company (optional)"
-                  />
+                  <input type="text" id="company" name="company" class="form-input" placeholder="Company (optional)" />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group">
-                  <input 
-                    type="email" 
-                    id="email" 
-                    name="email" 
-                    class="form-input" 
-                    placeholder="Your email"
-                    required
-                  />
+                  <input type="email" id="email" name="email" class="form-input" placeholder="Your email" required />
                 </div>
                 <div class="form-group">
-                  <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    class="form-input" 
-                    placeholder="Phone number"
-                    required
-                  />
+                  <input type="tel" id="phone" name="phone" class="form-input" placeholder="Phone number" required />
                 </div>
               </div>
 
               <div class="form-row">
                 <div class="form-group form-group--full">
-                  <textarea 
-                    id="message" 
-                    name="message" 
-                    class="form-input form-textarea" 
-                    placeholder="Tell us about yourself"
-                    rows="5"
-                    required
-                  ></textarea>
+                  <textarea id="message" name="message" class="form-input form-textarea"
+                    placeholder="Tell us about yourself" rows="5" required></textarea>
                 </div>
               </div>
 
@@ -193,6 +162,7 @@
               <li><a href="./index.html">Home</a></li>
               <li><a href="./about.html">About</a></li>
               <li><a href="./practice.html">Practice Areas</a></li>
+              <li><a href="./blog.html">Blog</a></li>
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
@@ -200,18 +170,33 @@
           <div class="footer-column">
             <h3 class="footer-heading">Justice</h3>
             <address class="footer-address">
-              <p>50 Harrison Street, PH Suite 445</p>
-              <p>Hoboken, NJ 07030</p>
-              <p>(000) 123-4567</p>
-              <p>yourlawfirm22@gmail.com</p>
+              <p>
+                <a href="https://www.google.com/maps/search/?api=1&query=50+Harrison+Street+PH+Suite+445+Hoboken+NJ+07030"
+                  target="_blank" rel="noopener noreferrer">
+                  50 Harrison Street, PH Suite 445
+                </a>
+              </p>
+              <p>
+                <a href="https://www.google.com/maps/search/?api=1&query=50+Harrison+Street+PH+Suite+445+Hoboken+NJ+07030"
+                  target="_blank" rel="noopener noreferrer">
+                  Hoboken, NJ 07030
+                </a>
+              </p>
+              <p>
+                <a href="tel:0001234567">(000) 123-4567</a>
+              </p>
+              <p>
+                <a href="mailto:yourlawfirm22@gmail.com">yourlawfirm22@gmail.com</a>
+              </p>
             </address>
           </div>
 
           <div class="footer-column">
             <div class="footer-map">
-              <img src="./assets/images/footer/map-preview-of-justice-law-firm-location.png"
-                alt="Map preview of Justice Law Firm location" />
-              <a class="map-button" href="#">View Large Map</a>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4994603879513!2d105.79999411143591!3d21.01269228055183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4df3c6c329%3A0xd8e14fe61fd32604!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gQ8OUTkcgTkdI4buGIEdJw4FPIEThu6RDIEY4!5e0!3m2!1svi!2s!4v1760938750921!5m2!1svi!2s"
+                width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
@@ -232,21 +217,23 @@
           <p class="footer-note">Copyright © 2022 UI HUT All Rights Reserved</p>
 
           <div class="footer-social">
-            <a class="social-button social-button--primary" href="#" aria-label="Visit our Facebook page">
+            <a class="social-button social-button--primary" href="https://www.facebook.com/"
+              aria-label="Visit our Facebook page">
               <img src="./assets/images/icons/facebook.svg" alt="" width="6" height="10" />
             </a>
-            <a class="social-button" href="#" aria-label="Visit our LinkedIn profile">
+            <a class="social-button" href="https://www.linkedin.com/" aria-label="Visit our LinkedIn profile">
               <img src="./assets/images/icons/linkedin.svg" alt="" width="12" height="10" />
             </a>
-            <a class="social-button" href="#" aria-label="Visit our Twitter profile">
+            <a class="social-button" href="https://x.com/" aria-label="Visit our Twitter profile">
               <img src="./assets/images/icons/twitter.svg" alt="" width="12" height="10" />
             </a>
-            <a class="social-button" href="#" aria-label="Visit our Instagram profile">
-              <img src="./assets/images/icons/instagram.svg" alt="" width="10" height="10" />
+            <a class="social-button" href="https://www.instagram.com/" aria-label="Visit our Instagram profile">
+              <img src="./assets/images/icons/instagram.svg" alt="" width="12" height="10" />
             </a>
           </div>
         </div>
       </div>
     </footer>
   </body>
+
 </html>
