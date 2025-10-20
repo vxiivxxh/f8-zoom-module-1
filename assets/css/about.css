@@ -1,0 +1,194 @@
+/* About Hero */
+.about-hero__content {
+  max-width: 48rem;
+  text-align: center;
+}
+
+/* Video Interviews */
+.video-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.video-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.video-card__media {
+  position: relative;
+  height: clamp(20rem, 45vw, 26.5rem);
+  overflow: hidden;
+}
+
+.video-card__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-card__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.video-card__play:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.video-card__info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.video-card__info h3 {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+
+.video-card__info p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@media (min-width: 56.25rem) {
+  .video-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* History Section */
+.history-grid {
+  display: grid;
+  grid-template-columns: 470px 600px;
+  gap: 6.25rem;
+  align-items: start;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.history-copy {
+  padding-top: 5.375rem;
+}
+
+.history-copy .section-tag {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: var(--grey);
+  margin-bottom: 0.5625rem;
+}
+
+.history-copy .section-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  color: var(--dark);
+  margin-bottom: 1.625rem;
+}
+
+.history-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+}
+
+.history-text p {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: var(--grey);
+  margin: 0;
+}
+
+.history-visual {
+  position: relative;
+  width: 600px;
+  height: 570px;
+  transform: scaleX(-1);
+}
+
+.history-visual img {
+  width: 570px;
+  height: 570px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.history-visual__accent {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 158px;
+  height: 270px;
+  background-color: var(--orange);
+  z-index: 0;
+}
+
+@media (min-width: 64rem) {
+  .history-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 3.5rem;
+  }
+}
+
+/* Experience Section */
+.experience {
+  background: #F8EBC9;
+  padding: 6.25rem 0;
+}
+
+.experience-content {
+  text-align: center;
+  max-width: 60.625rem;
+  margin: 0 auto;
+}
+
+.experience .section-tag {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: var(--dark);
+  margin-bottom: 1.125rem;
+}
+
+.experience .section-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  color: var(--dark);
+  margin-bottom: 1.25rem;
+}
+
+.experience .section-description {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: var(--grey);
+  max-width: 48.125rem;
+  margin: 0 auto;
+}
