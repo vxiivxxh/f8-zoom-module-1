@@ -1,0 +1,159 @@
+/* Contact Section */
+.contact-section {
+  padding: 6.25rem 0;
+}
+
+.contact-wrapper {
+  max-width: 73.125rem;
+  margin: 0 auto;
+}
+
+/* Contact Header */
+.contact-header {
+  margin-bottom: 3.625rem;
+}
+
+.contact-tag {
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  color: var(--grey);
+  margin: 0 0 1.125rem 0;
+}
+
+.contact-title {
+  font-family: 'Roboto Slab', serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.625rem;
+  line-height: 3.25rem;
+  color: var(--dark);
+  margin: 0 0 1.5rem 0;
+  max-width: 41.875rem;
+}
+
+.contact-description {
+  font-family: 'DM Sans', 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  letter-spacing: -0.01em;
+  color: var(--grey);
+  margin: 0;
+  max-width: 41.875rem;
+}
+
+/* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2.125rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group--full {
+  grid-column: 1 / -1;
+}
+
+.form-input {
+  width: 100%;
+  height: 3.75rem;
+  background: #F2F2F2;
+  border: none;
+  padding: 1.125rem 1.875rem;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  color: var(--grey);
+  transition: background-color 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: var(--grey);
+  opacity: 1;
+}
+
+.form-input:focus {
+  outline: none;
+  background: #E8E8E8;
+}
+
+.form-textarea {
+  height: 9.375rem;
+  resize: vertical;
+  padding: 1.25rem 1.875rem;
+}
+
+/* Submit Button */
+.contact-submit {
+  width: 9rem;
+  height: 3.875rem;
+  background: var(--dark);
+  border-radius: 1.9375rem;
+  border: none;
+  font-family: 'Manrope', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  text-align: center;
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-submit:hover {
+  background: #1a221f;
+  transform: translateY(-0.125rem);
+}
+
+.contact-submit:active {
+  transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 48rem) {
+  .contact-section {
+    padding: 3.5rem 0;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .contact-form {
+    gap: 1.25rem;
+  }
+
+  .contact-submit {
+    width: 100%;
+  }
+}
+
+@media (min-width: 48.0625rem) and (max-width: 64rem) {
+  .contact-title {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+}

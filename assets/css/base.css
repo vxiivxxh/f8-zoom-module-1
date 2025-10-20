@@ -259,7 +259,7 @@ button {
 
 .nav-item--dropdown > .nav-dropdown {
   position: absolute;
-  top: 100%;
+top: calc(100% + 0.5rem);
   left: 0;
   list-style: none;
   margin: 0;
@@ -274,6 +274,22 @@ button {
   z-index: 10;
 }
 
+/* Add invisible bridge to prevent menu from closing */
+.nav-item--dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 0.5rem;
+    background: transparent;
+    display: none;
+}
+
+.nav-item--dropdown:hover::after,
+.nav-item--dropdown:focus-within::after {
+    display: block;
+}
 .nav-item--dropdown > .nav-dropdown.is-open {
   display: block;
 }
@@ -394,7 +410,7 @@ button {
 
   .nav-item--dropdown > .nav-dropdown {
     position: absolute;
-    top: calc(100% + 0.75rem);
+    top: calc(100% + 0.5rem);
     left: 0;
     min-width: 12.5rem;
     padding: 0.75rem 0;
