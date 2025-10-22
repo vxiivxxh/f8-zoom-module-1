@@ -243,6 +243,7 @@
     position: relative;
     overflow: hidden;
     border-radius: 0;
+    cursor: pointer;
     transition: transform 0.3s ease;
 }
 
