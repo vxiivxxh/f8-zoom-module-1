@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Justice Law Firm</title>
     <link
-      rel="shortcut icon"
+      rel="icon"
       href="./assets/images/icons/logo.svg"
-      type="short icon"
+      type="image/svg+xml"
     />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
@@ -18,6 +18,11 @@
   <body>
     <header class="primary-nav bg-yellow-light">
       <div class="container nav-bar">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <a class="brand" href="./index.html">
           <span class="brand-icon" aria-hidden="true">
             <img
@@ -508,7 +513,7 @@
                   src="./assets/images/team/attorney-david-warner.png"
                   alt="Attorney David Warner"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -523,7 +528,7 @@
                   src="./assets/images/team/attorney-aaron-finch.png"
                   alt="Attorney Aaron Finch"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -538,7 +543,7 @@
                   src="./assets/images/team/attorney-jamie-watts.png"
                   alt="Attorney Jamie Watts"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -553,7 +558,7 @@
                   src="./assets/images/team/attorney-ellyse-perry.png"
                   alt="Attorney Ellyse Perry"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -568,7 +573,7 @@
                   src="./assets/images/team/attorney-meg-lanning.png"
                   alt="Attorney Meg Lanning"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -583,7 +588,7 @@
                   src="./assets/images/team/attorney-peter-siddle.png"
                   alt="Attorney Peter Siddle"
                 />
-                <a class="button team-card__cta" href="pages/about.html#team"
+                <a class="button team-card__cta" href="#!"
                   >View Profile</a
                 >
               </div>
@@ -1119,5 +1124,17 @@
         </div>
       </div>
     </footer>
+    <script>
+      // Mobile navigation toggle
+      const navToggle = document.querySelector('.nav-toggle');
+      const navPanel = document.querySelector('.nav-panel');
+
+      if (navToggle && navPanel) {
+        navToggle.addEventListener('click', function () {
+          const isOpen = navPanel.classList.toggle('is-open');
+          this.setAttribute('aria-expanded', isOpen);
+        });
+      }
+    </script>
   </body>
 </html>

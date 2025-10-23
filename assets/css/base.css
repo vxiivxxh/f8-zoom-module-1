@@ -438,12 +438,92 @@ top: calc(100% + 0.5rem);
 }
 
 @media (max-width: 63.9375rem) {
+  .nav-bar {
+      position: relative;
+      padding-block: 1.875rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    /* Hamburger Menu Button - Left Side */
+    .nav-toggle {
+      position: relative;
+      left: 0;
+      top: 0;
+      width: 1.125rem;
+      height: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      z-index: 100;
+      order: 1;
+    }
+  
+    .nav-toggle span {
+      display: block;
+      width: 1.125rem;
+      height: 0.125rem;
+      background: #212121;
+      transition: all 0.3s ease;
+    }
+  
+    /* Hide brand on mobile/tablet */
+    .brand {
+      display: none;
+    }
+  
+    /* Mobile Contact - Right Side */
+    .nav-contact {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 0.3125rem;
+      border: none;
+      padding: 0;
+      order: 3;
+    }
+  
+    .nav-contact__label {
+      font-family: 'Manrope';
+      font-weight: 400;
+      font-size: 0.625rem;
+      line-height: 1rem;
+      text-align: center;
+      color: var(--dark);
+    }
+  
+    .nav-contact__number {
+      font-family: 'Manrope';
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 1.1875rem;
+      text-align: center;
+      color: var(--dark);
+    }
+  
+    /* Hide navigation panel by default on mobile/tablet */
   .nav-panel {
+    display: none;
     padding-top: 1rem;
   }
 
-  .nav-contact__number {
-    font-size: 1.25rem;
+    .nav-panel.is-open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: var(--yellow-light);
+      padding: 1.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+      z-index: 99;
   }
 
   .nav-item--dropdown > .nav-dropdown {
