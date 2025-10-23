@@ -744,10 +744,10 @@
           </div>
 
           <div class="testimonials__dots" aria-hidden="true">
-            <span class="is-active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <button class="testimonial-dot is-active" data-index="0" aria-label="View testimonial 1"></button>
+            <button class="testimonial-dot" data-index="1" aria-label="View testimonial 2"></button>
+            <button class="testimonial-dot" data-index="2" aria-label="View testimonial 3"></button>
+            <button class="testimonial-dot" data-index="3" aria-label="View testimonial 4"></button>
           </div>
         </div>
       </section>
@@ -1135,6 +1135,26 @@
           this.setAttribute('aria-expanded', isOpen);
         });
       }
+
+  // Testimonial dots navigation
+  const testimonialDots = document.querySelectorAll('.testimonial-dot');
+  const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+  testimonialDots.forEach((dot) => {
+    dot.addEventListener('click', function () {
+      const index = parseInt(this.getAttribute('data-index'));
+
+      // Remove active class from all dots
+      testimonialDots.forEach((d) => d.classList.remove('is-active'));
+
+      // Add active class to clicked dot
+      this.classList.add('is-active');
+
+      // Optional: You can add logic here to show/hide testimonial cards
+      // For example, scrolling to the corresponding card or filtering them
+      console.log('Clicked testimonial dot:', index);
+    });
+  });
     </script>
   </body>
 </html>
