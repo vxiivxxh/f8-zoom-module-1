@@ -1264,7 +1264,7 @@
 }
 
 .blog-card__media img {
-  width: 370px;
+  width: 100%;
   height: 370px;
   object-fit: cover;
 }
@@ -1433,7 +1433,7 @@
   }
 
   .about-highlight__content {
-    text-align: center;
+    text-align: left;
   }
 
   .about-highlight__content .section-tag {
@@ -1451,7 +1451,7 @@
   }
 
   .about-highlight__stats {
-    justify-content: center;
+    justify-content: flex-start;
     gap: 1rem;
   }
 
@@ -1514,6 +1514,7 @@
 
   .practice-actions {
     margin-top: 2rem;
+    text-align: center;
   }
 
   /* Feature Block Section */
@@ -1543,7 +1544,7 @@
   }
 
   .feature-block__content {
-    text-align: center;
+    text-align: left;
   }
 
   .feature-block__copy {
@@ -1553,12 +1554,14 @@
 
   .feature-list {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 0.75rem;
   }
 
   .feature-list li {
     font-size: 0.875rem;
+    text-align: left;
+      justify-content: flex-start;
   }
 
   /* Team Section */
@@ -1568,6 +1571,7 @@
 
   .team__header {
     margin-bottom: 2rem;
+    text-align: left;
   }
 
   .team__intro {
@@ -1599,6 +1603,7 @@
 
   .team__actions {
     margin-top: 2rem;
+    text-align: left;
   }
 
   /* Awards Section */
@@ -1608,10 +1613,11 @@
 
   .awards__header {
     margin-bottom: 2rem;
+    text-align: left;
   }
 
   .awards__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1rem;
   }
 
@@ -1638,10 +1644,15 @@
   .testimonials__grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-left: -1.25rem;
+      margin-right: -1.25rem;
   }
 
   .testimonial-card {
+    width: 100%;
+      max-width: 100%;
     padding: 1.5rem;
+    border-radius: 0;
   }
 
   .testimonial-card img {
@@ -1692,7 +1703,7 @@
   }
 
   .faq__intro {
-    text-align: center;
+    text-align: left;
   }
 
   .faq__tabs {
@@ -1731,7 +1742,7 @@
   .blog__header {
     flex-direction: column;
     gap: 1.5rem;
-    text-align: center;
+    text-align: left;
   }
 
   .blog__intro {
@@ -1744,6 +1755,9 @@
     gap: 1.5rem;
   }
 
+        .blog-card {
+          width: 100%;
+        }
   .blog-card__media {
     height: 12rem;
   }
@@ -1780,6 +1794,7 @@
   /* CTA Section */
   .cta {
     padding: 3rem 0;
+    text-align: left;
   }
 
   .cta-content {
@@ -1794,12 +1809,14 @@
     font-size: 1.75rem;
     line-height: 2.25rem;
     margin: 1.5rem 0 1rem;
+    text-align: left;
   }
 
   .cta-content .section-description {
     font-size: 0.875rem;
     line-height: 1.5;
     margin-bottom: 1.5rem;
+    text-align: left;
   }
 
   .cta-content .button {
@@ -1820,6 +1837,12 @@
 
 @media (min-width: 23.5rem) and (max-width: 48rem) {
 
+  /* Hero Section */
+    .hero__content,
+    .row-left {
+      text-align: left;
+      align-items: flex-start;
+    }
   /* About Highlight */
   .about-highlight__grid {
     grid-template-columns: 1fr;
@@ -1830,11 +1853,20 @@
   .about-highlight__content {
     max-width: 100%;
     margin: 0 auto;
+    text-align: left;
+    }
+    
+    .about-highlight__stats {
+      justify-content: flex-start;
   }
 
   /* Practice Grid */
   .practice-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    }
+    
+    .practice-actions {
+      text-align: center;
   }
 
   /* Feature Blocks */
@@ -1847,27 +1879,80 @@
     margin: 0 auto;
   }
 
+                                                                .feature-block__content {
+                                                                  text-align: left;
+                                                                }
+                                
+                                                                .feature-list {
+                                                                  align-items: flex-start;
+                                                                }
+                                
+                                                                .feature-list li {
+                                                                  text-align: left;
+                                                                  justify-content: flex-start;
+                                                                }
   /* Team Grid */
   .team__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    }
+    
+    .team__header {
+      text-align: left;
+    }
+    
+    .team__actions {
+      text-align: left;
   }
 
   /* Awards */
   .awards__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    }
+    
+    .awards__header {
+      text-align: left;
   }
 
   /* Testimonials */
   .testimonials__grid {
     grid-template-columns: 1fr;
+    margin-left: -1.25rem;
+      margin-right: -1.25rem;
+    }
+    
+    .testimonial-card {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0;
   }
 
   .testimonial-card--featured {
     transform: none;
   }
 
+                                                                /* FAQ */
+                                                                .faq__intro {
+                                                                  text-align: left;
+                                                                }
   /* Blog */
   .blog__grid {
     grid-template-columns: 1fr;
   }
+.blog-card {
+  width: 100%;
+}
+
+.blog__header {
+  text-align: left;
+}
+
+/* CTA */
+.cta {
+  text-align: left;
+}
+
+.cta-content .section-title,
+.cta-content .section-description {
+  text-align: left;
+}
 }

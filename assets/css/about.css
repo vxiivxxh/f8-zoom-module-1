@@ -200,3 +200,81 @@
   max-width: 48.125rem;
   margin: 0 auto;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 48rem) {
+  .about-hero__content {
+    padding: 2rem 0;
+  }
+
+  .about-hero__content .section-title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .video-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .video-card__media {
+    height: 16rem;
+  }
+
+  .video-card__info {
+    padding: 1rem;
+  }
+
+  .video-card__info h3 {
+    font-size: 1.125rem;
+  }
+
+  .video-card__info p {
+    font-size: 0.875rem;
+  }
+
+  .history-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .history-copy {
+    padding-top: 0;
+  }
+
+  .history-copy .section-tag {
+    font-size: 0.875rem;
+  }
+
+  .history-copy .section-title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .history-copy .section-description {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+
+  .history-media {
+    width: 100%;
+  }
+
+  .experience {
+    padding: 3rem 0;
+  }
+
+  .experience .section-tag {
+    font-size: 0.875rem;
+  }
+
+  .experience .section-title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .experience .section-description {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+}
