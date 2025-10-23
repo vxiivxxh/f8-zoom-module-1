@@ -26,6 +26,8 @@
 html {
   font-size: 100%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
@@ -34,6 +36,9 @@ body {
   color: var(--dark);
   background-color: var(--white);
   line-height: 1.6;
+  overflow-x: hidden;
+    max-width: 100%;
+    position: relative;
 }
 
 img {
