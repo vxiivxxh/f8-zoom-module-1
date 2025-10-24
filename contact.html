@@ -5,11 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Contact Us — Justice Law Firm</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/images/icons/logo.svg"
-      type="short icon"
-    />
+    <link rel="shortcut icon" href="./assets/images/icons/logo.svg" type="short icon" />
     <link rel="stylesheet" href="./assets/css/fonts.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/contact.css" />
@@ -19,6 +15,11 @@
   <body>
     <header class="primary-nav bg-yellow-light">
       <div class="container nav-bar">
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <a class="brand" href="./index.html">
           <span class="brand-icon" aria-hidden="true">
             <img src="./assets/images/icons/logo.svg" alt="" width="31" height="31" />
@@ -31,22 +32,35 @@
         <nav class="nav-panel" aria-label="Primary">
           <ul class="nav-list nav-list--icons">
             <li class="nav-item nav-item--dropdown">
-              <a class="nav-link" href="./index.html" aria-haspopup="true" aria-expanded="false">
+              <a class="nav-link is-active" href="./index.html" aria-current="page" aria-haspopup="true"
+                aria-expanded="false">
                 Home
                 <img src="./assets/images/icons/chevron-nav.svg" class="icon icon-chevron" aria-hidden="true" width="12"
                   height="12" alt="" />
               </a>
               <ul class="nav-dropdown" aria-label="Home sections">
-                <li><a class="nav-dropdown__link" href="./index.html#overview">Overview</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#about-highlight">About Us</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#practice-areas">Practice Areas</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#features">Why Choose Us</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#team">Team</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#awards">Awards</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#testimonials">Testimonials</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#faq">FAQ</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#blog">Blog</a></li>
-                <li><a class="nav-dropdown__link" href="./index.html#contact">Contact</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="#overview">Overview</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="#about-highlight">About Us</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="#practice-areas">Practice Areas</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="#features">Why Choose Us</a>
+                </li>
+                <li><a class="nav-dropdown__link" href="#team">Team</a></li>
+                <li><a class="nav-dropdown__link" href="#awards">Awards</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="#testimonials">Testimonials</a>
+                </li>
+                <li><a class="nav-dropdown__link" href="#faq">FAQ</a></li>
+                <li><a class="nav-dropdown__link" href="#blog">Blog</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="#contact">Contact</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item nav-item--dropdown">
@@ -56,10 +70,18 @@
                   height="12" alt="" />
               </a>
               <ul class="nav-dropdown" aria-label="About">
-                <li><a class="nav-dropdown__link" href="./about.html#about-page">Our Story</a></li>
-                <li><a class="nav-dropdown__link" href="./about.html#about-page">Video Interviews</a></li>
-                <li><a class="nav-dropdown__link" href="./about.html#about-page">History</a></li>
-                <li><a class="nav-dropdown__link" href="./about.html#about-page">Our Experience</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="./about.html#about-page">Our Story</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./about.html#about-page">Video Interviews</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./about.html#about-page">History</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./about.html#about-page">Our Experience</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item nav-item--dropdown">
@@ -69,13 +91,24 @@
                   height="12" alt="" />
               </a>
               <ul class="nav-dropdown" aria-label="Practice Areas">
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-divorce">Divorce</a></li>
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-personal-injury">Personal Injury</a>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-divorce">Divorce</a>
                 </li>
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-employment">Employment</a></li>
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-immigration">Immigration</a></li>
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-family">Family</a></li>
-                <li><a class="nav-dropdown__link" href="./practice.html#practice-property">Property</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-personal-injury">Personal Injury</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-employment">Employment</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-immigration">Immigration</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-family">Family</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html#practice-property">Property</a>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
@@ -88,11 +121,21 @@
                   height="12" alt="" />
               </a>
               <ul class="nav-dropdown" aria-label="All Pages">
-                <li><a class="nav-dropdown__link" href="./index.html">Home</a></li>
-                <li><a class="nav-dropdown__link" href="./about.html">About</a></li>
-                <li><a class="nav-dropdown__link" href="./practice.html">Practice Areas</a></li>
-                <li><a class="nav-dropdown__link" href="./blog.html">Blog</a></li>
-                <li><a class="nav-dropdown__link" href="./contact.html">Contact</a></li>
+                <li>
+                  <a class="nav-dropdown__link" href="./index.html">Home</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./about.html">About</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./practice.html">Practice Areas</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./blog.html">Blog</a>
+                </li>
+                <li>
+                  <a class="nav-dropdown__link" href="./contact.html">Contact</a>
+                </li>
               </ul>
             </li>
           </ul>
