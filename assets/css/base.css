@@ -175,6 +175,7 @@ button {
   justify-content: space-between;
   gap: 1.5rem;
   padding-block: 1.875rem;
+  flex-wrap: nowrap;
 }
 
 .brand {
@@ -439,6 +440,16 @@ top: calc(100% + 0.5rem);
     gap: 0.5rem;
     border: none;
     padding: 0;
+    white-space: nowrap;
+      flex-shrink: 0;
+    }
+    
+    .nav-contact__label {
+      white-space: nowrap;
+    }
+    
+    .nav-contact__number {
+      white-space: nowrap;
   }
 }
 
@@ -482,10 +493,10 @@ top: calc(100% + 0.5rem);
       display: none;
     }
   
-    /* Mobile Contact - Top Right Corner */
+                /* Mobile Contact - Always visible on top right */
     .nav-contact {
       position: relative;
-      display: flex;
+      display: flex !important;
       flex-direction: row;
       align-items: center;
       gap: 0.3125rem;
