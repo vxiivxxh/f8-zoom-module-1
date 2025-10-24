@@ -477,9 +477,9 @@ top: calc(100% + 0.5rem);
       transition: all 0.3s ease;
     }
   
-    /* Hide brand on mobile/tablet */
-    .brand {
-      display: none;
+    /* Brand visible on mobile - only in navigation */
+    .nav-bar .brand {
+      order: 2;
     }
   
     /* Mobile Contact - Right Side */
