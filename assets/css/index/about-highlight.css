@@ -1,0 +1,229 @@
+/* About Highlight */
+.about-highlight--dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.about-highlight__grid {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  align-items: center;
+}
+
+.about-highlight__media {
+  position: relative;
+  max-width: 34rem;
+  margin: 0 auto;
+}
+
+.about-highlight__photo {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.about-highlight__mask {
+  position: absolute;
+  width: clamp(6rem, 9vw, 7.125rem);
+  height: auto;
+  right: clamp(-2rem, -3vw, -1.5rem);
+  bottom: clamp(-3rem, -6vw, -2.5rem);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.about-highlight__stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(0.75rem, 1vw, 1.25rem);
+  height: clamp(12rem, 25vw, 13.75rem);
+  background-color: var(--yellow);
+  z-index: 0;
+}
+
+.about-highlight__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 29.375rem;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+
+.about-highlight__copy {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #beccc7;
+}
+
+.about-highlight__content .section-tag {
+  font-size: 1.125rem;
+  line-height: 1.6667;
+  font-weight: 400;
+  color: var(--orange);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.about-highlight__content .section-title {
+  font-size: clamp(2.25rem, 3.2vw, 2.625rem);
+  line-height: clamp(3rem, 4vw, 3.25rem);
+  max-width: 29.375rem;
+}
+
+.about-highlight__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.about-highlight__stat {
+  padding: 1rem 1.5rem;
+  min-width: 7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.about-highlight__stat-number {
+  font-family: "Roboto Slab", -apple-system, "Roboto", "Helvetica", serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.125rem;
+}
+
+.about-highlight__stat-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+}
+
+.about-highlight__content .button {
+  align-self: flex-start;
+  padding: 0.9375rem 2.1875rem;
+  min-width: 10.375rem;
+  height: 3.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+@media (min-width: 62rem) {
+  .about-highlight__grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    padding-block: clamp(3rem, 5vw, 5.5rem);
+  }
+
+  .about-highlight__media {
+    max-width: clamp(24rem, 36vw, 33.5rem);
+    margin: 0;
+    justify-self: start;
+  }
+
+  .about-highlight__content {
+    max-width: clamp(22rem, 35vw, 29.375rem);
+    margin: 0;
+    justify-self: end;
+  }
+
+  .about-highlight__stats {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about-highlight__stat {
+    flex: 1 1 calc(50% - 1.5rem);
+    min-width: auto;
+  }
+
+  .about-highlight__mask {
+    display: none;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .about-highlight {
+    padding: 3rem 0;
+  }
+
+  .about-highlight__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-highlight__media {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .about-highlight__photo {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-highlight__stripe,
+  .about-highlight__mask {
+    display: none;
+  }
+
+  .about-highlight__content {
+    text-align: left;
+  }
+
+  .about-highlight__content .section-tag {
+    font-size: 0.875rem;
+  }
+
+  .about-highlight__content .section-title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+  }
+
+  .about-highlight__copy {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .about-highlight__stats {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .about-highlight__stat {
+    padding: 0.75rem 1rem;
+    min-width: 5rem;
+  }
+
+  .about-highlight__stat-number {
+    font-size: 1.75rem;
+  }
+
+  .about-highlight__stat-label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (min-width: 23.5rem) and (max-width: 48rem) {
+  .about-highlight__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-highlight__media,
+  .about-highlight__content {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .about-highlight__stats {
+    justify-content: flex-start;
+  }
+}

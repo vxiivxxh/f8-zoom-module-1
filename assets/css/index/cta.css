@@ -1,0 +1,100 @@
+/* CTA */
+.cta {
+  text-align: center;
+  background: #017848;
+  padding: 6.25rem 0;
+}
+
+.cta-content {
+  max-width: 570px;
+  margin-inline: auto;
+}
+
+.cta-content .section-tag {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.cta-content .section-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.625rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  text-align: center;
+  color: var(--white);
+  margin: 2.25rem 0 1.75rem;
+}
+
+.cta-content .section-description {
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: var(--white);
+  max-width: 470px;
+  margin: 0 auto 2rem;
+}
+
+.cta-content .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9375rem 2.1875rem;
+  background: var(--orange);
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  text-align: center;
+  color: var(--white);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-content .button:hover {
+  background: #e55532;
+}
+
+@media (max-width: 23.4375rem) {
+  .cta {
+    padding: 3rem 0;
+    text-align: center;
+  }
+
+  .cta-content {
+    padding: 0 1.25rem;
+    text-align: center;
+  }
+
+  .cta-content .section-tag {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+
+  .cta-content .section-title {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 1.5rem 0 1rem;
+    text-align: center;
+  }
+
+  .cta-content .section-description {
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .cta-content .button {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

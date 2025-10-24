@@ -477,12 +477,12 @@ top: calc(100% + 0.5rem);
       transition: all 0.3s ease;
     }
   
-    /* Brand visible on mobile - only in navigation */
+    /* Hide brand on mobile/tablet */
     .nav-bar .brand {
-      order: 2;
+      display: none;
     }
   
-    /* Mobile Contact - Right Side */
+    /* Mobile Contact - Top Right Corner */
     .nav-contact {
       position: relative;
       display: flex;
@@ -492,6 +492,7 @@ top: calc(100% + 0.5rem);
       border: none;
       padding: 0;
       order: 3;
+      margin-left: auto;
     }
   
     .nav-contact__label {
@@ -499,7 +500,7 @@ top: calc(100% + 0.5rem);
       font-weight: 400;
       font-size: 0.625rem;
       line-height: 1rem;
-      text-align: center;
+      text-align: right;
       color: var(--dark);
     }
   
@@ -508,11 +509,9 @@ top: calc(100% + 0.5rem);
       font-weight: 700;
       font-size: 0.75rem;
       line-height: 1.1875rem;
-      text-align: center;
+      text-align: right;
       color: var(--dark);
-    }
-  
-    /* Hide navigation panel by default on mobile/tablet */
+    }    /* Hide navigation panel by default on mobile/tablet */
   .nav-panel {
     display: none;
     padding-top: 1rem;

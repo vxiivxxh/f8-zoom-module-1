@@ -1,0 +1,142 @@
+/* Team */
+.team--dark {
+  background-color: var(--dark);
+  color: var(--white);
+}
+
+.team__header {
+  text-align: center;
+  max-width: 32rem;
+  margin: 0 auto clamp(3rem, 6vw, 4rem);
+}
+
+.team__intro {
+  margin: 0;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 2rem;
+}
+
+.team-card {
+  position: relative;
+}
+
+.team-card__media {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-card__media img {
+  width: 100%;
+  height: clamp(20rem, 32vw, 23rem);
+  object-fit: cover;
+}
+
+.team-card__cta {
+  position: absolute;
+  left: 50%;
+  bottom: clamp(4rem, 9vw, 5.5rem);
+  transform: translate(-50%, 1rem);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  white-space: nowrap;
+}
+
+.team-card:hover .team-card__cta,
+.team-card:focus-within .team-card__cta {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.team-card__body {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.team-card__body h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.team-card__body p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.team__actions {
+  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+  text-align: center;
+}
+
+@media (min-width: 64rem) {
+  .team__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .team {
+    padding: 3rem 0;
+  }
+
+  .team__header {
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .team__intro {
+    font-size: 0.875rem;
+    line-height: 1.5;
+  }
+
+  .team__grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card__media img {
+    height: 20rem;
+  }
+
+  .team-card__cta {
+    font-size: 0.875rem;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .team-card__body h3 {
+    font-size: 1.125rem;
+  }
+
+  .team-card__body p {
+    font-size: 0.875rem;
+  }
+
+  .team__actions {
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 23.5rem) and (max-width: 48rem) {
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team__header {
+    text-align: left;
+  }
+  
+  .team__actions {
+    text-align: center;
+  }
+}
