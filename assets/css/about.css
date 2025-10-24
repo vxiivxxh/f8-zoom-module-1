@@ -131,14 +131,17 @@
 
 .history-visual {
   position: relative;
-  width: 600px;
-  height: 570px;
+  width: 100%;
+    max-width: 600px;
+    height: auto;
   transform: scaleX(-1);
 }
 
 .history-visual img {
-  width: 570px;
-  height: 570px;
+  width: 100%;
+    max-width: 570px;
+    height: auto;
+    aspect-ratio: 1 / 1;
   object-fit: cover;
   position: relative;
   z-index: 1;
@@ -244,20 +247,40 @@
 
   .history-copy .section-tag {
     font-size: 0.875rem;
+    line-height: 1.5rem;
+      margin-bottom: 0.5rem;
   }
 
   .history-copy .section-title {
     font-size: 1.75rem;
     line-height: 2.25rem;
+    margin-bottom: 1rem;
   }
 
-  .history-copy .section-description {
+    .history-text {
+      gap: 1rem;
+    }
+  
+    .history-text p {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
 
-  .history-media {
+    .history-visual {
     width: 100%;
+    height: auto;
+      transform: scaleX(-1);
+    }
+    
+    .history-visual img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+    }
+    
+    .history-visual__accent {
+      width: 80px;
+      height: 140px;
   }
 
   .experience {
