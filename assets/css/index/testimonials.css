@@ -102,9 +102,6 @@
 
 .testimonial-card:hover {
   transform: translateY(-0.5rem);
-}
-
-.testimonial-card--featured {
   box-shadow: 0 1.25rem 4.375rem rgba(14, 20, 18, 0.07);
   border-color: transparent;
 }

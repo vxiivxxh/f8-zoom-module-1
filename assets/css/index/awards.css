@@ -35,7 +35,7 @@
 
 .award-card {
   background-color: var(--white);
-  padding: clamp(3rem, 6vw, 5.3125rem);
+  padding: clamp(1.5rem, 3vw, 2.5rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,8 +52,8 @@
 .award-card img {
   width: 100%;
   height: auto;
-  max-width: 12.375rem;
-  max-height: 6.3125rem;
+  max-width: 18rem;
+    max-height: 10rem;
   object-fit: contain;
 }
 
