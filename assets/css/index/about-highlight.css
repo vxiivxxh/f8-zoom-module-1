@@ -12,33 +12,57 @@
 
 .about-highlight__media {
   position: relative;
-  max-width: 34rem;
+  width: 39.1875rem;
+    /* 627px */
+    height: 35.625rem;
+    /* 570px */
   margin: 0 auto;
 }
 
 .about-highlight__photo {
-  width: 100%;
-  height: auto;
-  position: relative;
+  position: absolute;
+    width: 35.625rem;
+    /* 570px */
+    height: 35.625rem;
+    /* 570px */
+    left: 0;
+    top: 0;
+    object-fit: cover;
   z-index: 1;
 }
 
 .about-highlight__mask {
   position: absolute;
-  width: clamp(6rem, 9vw, 7.125rem);
-  height: auto;
-  right: clamp(-2rem, -3vw, -1.5rem);
-  bottom: clamp(-3rem, -6vw, -2.5rem);
+  width: 7.125rem;
+    /* 114px */
+    height: 9.875rem;
+    /* 158px */
+    right: 0;
+    /* 648px - 135px = 513px, then 627px - 114px = 513px, so right: 0 */
+    bottom: 5rem;
+    /* Moved up from bottom */
   z-index: 2;
   pointer-events: none;
 }
 
+.about-highlight__rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.25rem;
+  /* 20px */
+  height: 13.75rem;
+  /* 220px */
+  z-index: 2;
+}
 .about-highlight__stripe {
   position: absolute;
   top: 0;
   left: 0;
-  width: clamp(0.75rem, 1vw, 1.25rem);
-  height: clamp(12rem, 25vw, 13.75rem);
+  width: 1.25rem;
+    /* 20px */
+    height: 13.75rem;
+    /* 220px */
   background-color: var(--yellow);
   z-index: 0;
 }
@@ -121,7 +145,10 @@
   }
 
   .about-highlight__media {
-    max-width: clamp(24rem, 36vw, 33.5rem);
+    width: 39.1875rem;
+      /* 627px */
+      height: 35.625rem;
+      /* 570px */
     margin: 0;
     justify-self: start;
   }
@@ -138,13 +165,39 @@
 }
 
 @media (max-width: 48rem) {
+  .about-highlight__media {
+      width: 100%;
+      max-width: 34rem;
+      height: auto;
+      aspect-ratio: 627 / 570;
+    }
+  
+    .about-highlight__photo {
+      width: 90.75%;
+      /* 570/627 */
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
   .about-highlight__stat {
     flex: 1 1 calc(50% - 1.5rem);
     min-width: auto;
   }
 
   .about-highlight__mask {
-    display: none;
+    width: 18.2%;
+      /* 114/627 */
+      height: auto;
+      right: 0;
+      bottom: 0;
+    }
+    
+    .about-highlight__stripe {
+      width: 3.2%;
+      /* 20/627 */
+      height: 38.6%;
+      /* 220/570 */
   }
 }
 
@@ -159,13 +212,19 @@
   }
 
   .about-highlight__media {
+    width: 100%;
     max-width: 100%;
+    height: auto;
+      aspect-ratio: 1 / 1;
     margin: 0 auto;
   }
 
   .about-highlight__photo {
     width: 100%;
-    height: auto;
+    height: 100%;
+      position: relative;
+      left: 0;
+      top: 0;
   }
 
   .about-highlight__stripe,
@@ -216,7 +275,11 @@
     gap: 2.5rem;
   }
 
-  .about-highlight__media,
+        .about-highlight__media {
+          width: 100%;
+          max-width: 34rem;
+          margin: 0 auto;
+        }
   .about-highlight__content {
     max-width: 100%;
     margin: 0 auto;
